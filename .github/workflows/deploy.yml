@@ -34,7 +34,7 @@ jobs:
         run: npm run build
 
       - name: Add CNAME file
-        run: echo 'muyaho.xyz' > ./dist/CNAME
+        run: echo 'www.muyaho.xyz' > ./dist/CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
