@@ -1,18 +1,34 @@
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
-      <div className="container mx-auto px-4 py-16">
-        <main className="flex flex-col items-center justify-center min-h-[80vh] text-center">
-          <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-            MUYAHO
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">
-            Your content goes here. Replace this with your own description.
+    <main className="min-h-[100dvh] bg-[#0097A4] text-white relative overflow-hidden">
+      <div className="container flex flex-col items-center justify-center mx-auto relative z-10 mt-[16vh] gap-[56px]">
+        <div className="flex flex-col items-center justify-center text-center">
+          <p className="text-[50px] text-[#C1FAFF] leading-[1.2]">
+            Most Beloved Korean Meme
           </p>
-        </main>
+          <h1
+            className="text-[80px] font-bold text-[#FFFFFF] leading-[1.2]"
+            style={{ fontFamily: 'Holtwood One SC, serif' }}
+          >
+            MUYAHO!
+          </h1>
+        </div>
+        <a
+          href="https://pump.fun/coin/GgQ8iH5r1pCybqgTj61CveCzUAv1yX9F2twKGtqRpump"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-[#FFFFFF] hover:bg-[#C1FAFF] py-[10px] px-[16px] rounded-full text-[24px] text-[#0097A4] font-bold no-underline self-center transition-all duration-300 ease-in-out"
+        >
+          Pump it
+        </a>
       </div>
-    </div>
-  )
+      <img
+        src="/src/assets/main.jpg"
+        alt="MUYAHO meme"
+        className="absolute left-1/2 h-[60vh] w-auto object-contain animate-slideUp origin-bottom bottom-[0px]"
+      />
+    </main>
+  );
 }
 
-export default App
+export default App;
