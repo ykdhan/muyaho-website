@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -35,6 +35,9 @@ jobs:
 
       - name: Add CNAME file
         run: echo 'www.muyaho.xyz' > ./dist/CNAME
+
+      - name: Add .nojekyll file
+        run: touch ./dist/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
