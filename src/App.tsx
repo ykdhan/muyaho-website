@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import mainImage from './assets/main.jpg';
+import mainImage from './assets/main.png';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
