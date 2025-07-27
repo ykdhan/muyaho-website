@@ -1,3 +1,5 @@
+import mainImage from './assets/main.jpg';
+
 function App() {
   return (
     <main className="min-h-[100dvh] bg-[#0097A4] text-white relative overflow-hidden">
@@ -6,12 +8,26 @@ function App() {
           <p className="text-[50px] text-[#C1FAFF] leading-[1.2]">
             Most Beloved Korean Meme
           </p>
-          <h1
+          <h1 className="absolute opacity-0">MUYAHO!</h1>
+          <p
             className="text-[80px] font-bold text-[#FFFFFF] leading-[1.2]"
             style={{ fontFamily: 'Holtwood One SC, serif' }}
+            aria-label="MUYAHO!"
           >
-            MUYAHO!
-          </h1>
+            {'MUYAHO!'.split('').map((letter, index) => (
+              <span
+                key={index}
+                className="inline-block animate-letterPop"
+                style={{
+                  animationDelay: `${index * 0.05}s`,
+                  opacity: 0,
+                  transform: 'scale(0)',
+                }}
+              >
+                {letter}
+              </span>
+            ))}
+          </p>
         </div>
         <a
           href="https://pump.fun/coin/GgQ8iH5r1pCybqgTj61CveCzUAv1yX9F2twKGtqRpump"
@@ -23,7 +39,7 @@ function App() {
         </a>
       </div>
       <img
-        src="/src/assets/main.jpg"
+        src={mainImage}
         alt="MUYAHO meme"
         className="absolute left-1/2 h-[60vh] w-auto object-contain animate-slideUp origin-bottom bottom-[0px]"
       />
