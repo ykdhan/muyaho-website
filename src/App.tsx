@@ -76,7 +76,7 @@ function App() {
       <img
         src={mainImage}
         alt="MUYAHO meme"
-        className="absolute left-1/2 h-[50vh] md:h-[60vh] w-auto object-contain animate-slideUp origin-bottom bottom-[0px]"
+        className="absolute left-1/2 h-[50vh] md:h-[60vh] w-auto object-cover animate-slideUp origin-bottom bottom-[0px]"
       />
     </main>
   );
